@@ -1,0 +1,6 @@
+__pycache__/
+*.sqlite
+traces/
+released/
+.pytest_cache/
+.env

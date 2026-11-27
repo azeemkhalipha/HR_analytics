@@ -1,0 +1,12 @@
+langgraph>=1.0
+langgraph-checkpoint-sqlite
+pydantic>=2.6
+scikit-learn
+pandas
+numpy
+scipy
+fastapi
+uvicorn
+mcp>=2.0
+boto3
+httpx

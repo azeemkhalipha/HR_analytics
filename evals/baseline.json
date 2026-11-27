@@ -1,0 +1,12 @@
+{
+  "risk_auc": 0.7718,
+  "impact_ordering": 1.0,
+  "adjacency_hit_rate": 1.0,
+  "retrieval_top1": 1.0,
+  "schema_valid_after_retry": 1.0,
+  "hallucination_blocked": 1.0,
+  "pii_leaks": 0,
+  "hitl_no_release_before_or_on_reject": 1.0,
+  "release_idempotent": 1.0,
+  "bias_not_failing": 1.0
+}

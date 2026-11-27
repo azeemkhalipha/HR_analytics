@@ -1,0 +1,105 @@
+{
+  "_note": "Hand-written synthetic taxonomy for demo purposes. Structure mirrors O*NET/ESCO (role -> tasks -> skills). Swap in real O*NET data via scripts/load_onet.py (not included).",
+  "roles": {
+    "HR Operations Analyst": {
+      "family": "HR",
+      "description": "Processes employee records, payroll inputs, onboarding paperwork and answers routine HR queries.",
+      "tasks": [
+        {"name": "Enter and validate employee records", "share": 0.30, "automation": 0.85, "skills": ["data entry", "hris", "attention to detail"]},
+        {"name": "Process onboarding paperwork", "share": 0.20, "automation": 0.70, "skills": ["hris", "compliance basics", "communication"]},
+        {"name": "Answer routine HR queries", "share": 0.25, "automation": 0.75, "skills": ["communication", "policy knowledge", "hris"]},
+        {"name": "Prepare monthly HR reports", "share": 0.25, "automation": 0.60, "skills": ["excel", "reporting", "data analysis"]}
+      ]
+    },
+    "Talent Acquisition Recruiter": {
+      "family": "HR",
+      "description": "Sources, screens and hires candidates for open roles.",
+      "tasks": [
+        {"name": "Source candidates", "share": 0.25, "automation": 0.65, "skills": ["sourcing", "boolean search", "communication"]},
+        {"name": "Screen resumes", "share": 0.25, "automation": 0.80, "skills": ["resume screening", "role knowledge"]},
+        {"name": "Interview and assess candidates", "share": 0.30, "automation": 0.25, "skills": ["interviewing", "assessment", "communication"]},
+        {"name": "Negotiate offers and manage stakeholders", "share": 0.20, "automation": 0.10, "skills": ["negotiation", "stakeholder management"]}
+      ]
+    },
+    "HR Business Partner": {
+      "family": "HR",
+      "description": "Advises business leaders on people strategy, performance and org design.",
+      "tasks": [
+        {"name": "Advise leaders on workforce planning", "share": 0.30, "automation": 0.20, "skills": ["workforce planning", "stakeholder management", "data analysis"]},
+        {"name": "Handle employee relations cases", "share": 0.25, "automation": 0.10, "skills": ["employee relations", "policy knowledge", "communication"]},
+        {"name": "Run performance and talent reviews", "share": 0.25, "automation": 0.35, "skills": ["performance management", "facilitation"]},
+        {"name": "Analyse people metrics", "share": 0.20, "automation": 0.55, "skills": ["data analysis", "reporting", "excel"]}
+      ]
+    },
+    "People Analytics Analyst": {
+      "family": "Analytics",
+      "description": "Builds dashboards and models on workforce data.",
+      "tasks": [
+        {"name": "Build workforce dashboards", "share": 0.30, "automation": 0.55, "skills": ["sql", "visualization", "reporting"]},
+        {"name": "Model attrition and engagement", "share": 0.25, "automation": 0.40, "skills": ["python", "statistics", "predictive modeling"]},
+        {"name": "Clean and join HR data", "share": 0.25, "automation": 0.70, "skills": ["sql", "python", "data engineering"]},
+        {"name": "Present insights to HR leaders", "share": 0.20, "automation": 0.15, "skills": ["storytelling", "stakeholder management"]}
+      ]
+    },
+    "Learning & Development Specialist": {
+      "family": "Talent",
+      "description": "Designs and delivers training and reskilling programmes.",
+      "tasks": [
+        {"name": "Run training needs analysis", "share": 0.25, "automation": 0.45, "skills": ["skills gap analysis", "data analysis", "facilitation"]},
+        {"name": "Design learning content", "share": 0.30, "automation": 0.50, "skills": ["instructional design", "communication"]},
+        {"name": "Deliver and facilitate sessions", "share": 0.25, "automation": 0.15, "skills": ["facilitation", "communication"]},
+        {"name": "Track learning completion", "share": 0.20, "automation": 0.85, "skills": ["lms", "reporting"]}
+      ]
+    },
+    "Compensation & Benefits Analyst": {
+      "family": "HR",
+      "description": "Benchmarks pay and administers benefits.",
+      "tasks": [
+        {"name": "Benchmark salaries", "share": 0.30, "automation": 0.60, "skills": ["excel", "data analysis", "market knowledge"]},
+        {"name": "Administer benefits enrolment", "share": 0.30, "automation": 0.80, "skills": ["hris", "compliance basics"]},
+        {"name": "Model pay scenarios", "share": 0.20, "automation": 0.50, "skills": ["excel", "statistics"]},
+        {"name": "Advise managers on pay decisions", "share": 0.20, "automation": 0.15, "skills": ["communication", "stakeholder management"]}
+      ]
+    },
+    "Data Analyst": {
+      "family": "Analytics",
+      "description": "Answers business questions with SQL, Excel and BI tools.",
+      "tasks": [
+        {"name": "Write SQL and extract data", "share": 0.30, "automation": 0.65, "skills": ["sql", "data engineering"]},
+        {"name": "Build reports and dashboards", "share": 0.35, "automation": 0.55, "skills": ["visualization", "reporting", "excel"]},
+        {"name": "Run ad hoc analyses", "share": 0.20, "automation": 0.45, "skills": ["statistics", "python", "data analysis"]},
+        {"name": "Explain findings to stakeholders", "share": 0.15, "automation": 0.15, "skills": ["storytelling", "stakeholder management"]}
+      ]
+    },
+    "Data Scientist": {
+      "family": "Analytics",
+      "description": "Builds predictive models and experiments.",
+      "tasks": [
+        {"name": "Feature engineering and model building", "share": 0.40, "automation": 0.45, "skills": ["python", "statistics", "predictive modeling"]},
+        {"name": "Run experiments and evaluate models", "share": 0.25, "automation": 0.40, "skills": ["statistics", "experimentation"]},
+        {"name": "Productionise models with engineers", "share": 0.20, "automation": 0.30, "skills": ["mlops", "python", "data engineering"]},
+        {"name": "Communicate results to business", "share": 0.15, "automation": 0.15, "skills": ["storytelling", "stakeholder management"]}
+      ]
+    },
+    "AI Solutions Consultant": {
+      "family": "AI",
+      "description": "Designs and deploys GenAI and agentic solutions for client workflows.",
+      "tasks": [
+        {"name": "Design agentic workflows and RAG", "share": 0.35, "automation": 0.20, "skills": ["llm orchestration", "rag", "python", "solution design"]},
+        {"name": "Evaluate and monitor LLM systems", "share": 0.25, "automation": 0.30, "skills": ["evals", "observability", "python"]},
+        {"name": "Deploy to client cloud environments", "share": 0.20, "automation": 0.30, "skills": ["cloud", "security basics", "mlops"]},
+        {"name": "Present to senior stakeholders", "share": 0.20, "automation": 0.10, "skills": ["storytelling", "stakeholder management"]}
+      ]
+    },
+    "Workforce Planning Analyst": {
+      "family": "Talent",
+      "description": "Forecasts headcount, skills supply and demand.",
+      "tasks": [
+        {"name": "Forecast headcount demand", "share": 0.30, "automation": 0.50, "skills": ["workforce planning", "predictive modeling", "excel"]},
+        {"name": "Map skills supply and gaps", "share": 0.30, "automation": 0.45, "skills": ["skills gap analysis", "data analysis"]},
+        {"name": "Build scenario models", "share": 0.20, "automation": 0.50, "skills": ["excel", "statistics"]},
+        {"name": "Advise on workforce strategy", "share": 0.20, "automation": 0.10, "skills": ["stakeholder management", "storytelling"]}
+      ]
+    }
+  }
+}
