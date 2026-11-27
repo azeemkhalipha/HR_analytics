@@ -4,3 +4,4 @@ traces/
 released/
 .pytest_cache/
 .env
+.venv
